@@ -1,4 +1,4 @@
-languange: python
+language: python
 
 os:
   - windows
