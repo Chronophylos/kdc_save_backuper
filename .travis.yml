@@ -3,8 +3,7 @@ languange: python
 os:
   - windows
 
-python:
-  - "3.6"
+python: "3.6"
 
 install:
   - pip install pyinstaller
@@ -20,7 +19,6 @@ jobs:
       api_key: $GITHUB_OAUTH_TOKEN
       skip_cleanup: true
       overwrite: true
-      file:
-        - "dist/KCD-Save-Backuper.exe"
+      file: "dist/KCD-Save-Backuper.exe"
       on:
         tags: true
