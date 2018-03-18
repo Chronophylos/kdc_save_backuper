@@ -5,12 +5,10 @@ os:
 
 python: "3.6"
 
-install:
-  - pip install pyinstaller
-
 jobs:
   include:
   - stage: pyinstaller
+    script: pip install pyinstaller
     script: pyinstaller --console --clean --onefile --name "KCD-Save-Backuper" kdcsbak.py 
   - stage: GitHub Release
     script: echo "Deploying to GitHub releases ..."
