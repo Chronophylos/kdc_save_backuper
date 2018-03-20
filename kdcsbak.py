@@ -48,4 +48,5 @@ def main():
 		
 
 main()
-input('Press any key to continue')
+for i in range(3):
+	print(f'exiting in {i}..')
