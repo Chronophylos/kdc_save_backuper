@@ -2,6 +2,7 @@ from os import mkdir, rename
 from os.path import split, join, exists, expanduser
 from glob import iglob
 from re import search
+from time import sleep
 
 
 base_folder = join(expanduser('~'), 'Saved Games\kingdomcome')
@@ -49,4 +50,5 @@ def main():
 
 main()
 for i in range(3):
+	sleep(1)
 	print(f'exiting in {i}..')
